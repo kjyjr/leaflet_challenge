@@ -1,1 +1,5 @@
 # leaflet_challenge
+
+In this challenge, the task was to develop a way to visualize United States Geological Survey (USGS) earthquake data to better educate the public and other government organizations. A new set of tools was needed to display the massive amount of data collected throughout the world each day.
+
+The first step was to visit the USGS GeoJSON page, and from there to select a dataset. Once the dataset was selected, then it was imported and visualized, using Leaflet. A map was plotted of all the earthquakes from the dataset based on their longitude and latitude. Data markers were made to reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes were made to appear in larger markers, and earthquakes with greater depth in darker color. Popups were also added to provide additional information about the earthquake when its associated marker is clicked. And a legend was included as well to provide context for map data.
