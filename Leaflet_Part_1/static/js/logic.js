@@ -1,5 +1,4 @@
-let earthquakeURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
-
+let earthquakeURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson"
 let myMap = L.map("map", {
             center: [0, 0],
             zoom: 2,
@@ -18,7 +17,7 @@ var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alida
 
 d3.json(earthquakeURL).then(function (data) {
    console.log(data);
-   
+
     function styleInfo(feature) {
         return {
           opacity: 1,
